@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport">
+      <title>Survey Form</title>
+      <link rel="stylesheet" href="styles.css">
+      <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+  <head>
+  <body>
+    <div class="main"> 
+      <div class="heading">
+        <h1 id="title">Programming Survey</h1>
+        <img src="https://miro.medium.com/max/306/1*JbXe-wn4CivSw6e9GmmFvw.png"/>
+        <p id="description"><strong><em>This is a brief survey regarding different popular programming languages. Please fill out the required questions to the best of your ability</strong></em></p>
+      </div>
+      <form id="survey-form">
+        <hr class="bottom_line"/>
+        <fieldset>
+            <label id="name-label">Name: <input type="text" id="name" placeholder="type here" required /></label>
+            <label id="email-label">Email: <input type="email" id="email" placeholder="type here" required /></label>
+            <label id="number-label">Number: <input type="number" id="number" placeholder="type here" min="0000000000" max="9999999999" required /></label>          
+            <select id="dropdown">
+              <option>Choose your level of coding experience</option>
+              <option>Beginner</option>
+              <option>Intermediate</option>
+              <option>Advanced</option>
+            </select>
+        </fieldset>
+        <hr class="bottom_line"/>
+        <fieldset>
+          <h4>What is your programming role, if any?</h4>
+          <label><input type="radio" name="role" value="frontend-developer"/>Front-end developer</label>
+          <label><input type="radio" name="role" value="backend-developer"/>Back-end developer</label>
+          <label><input type="radio" name="role" value="fullstack-developer"/>Full-stack developer</label>
+          <label><input type="radio" name="role" value="data-scientist"/>Data scientist</label>
+          <label><input type="radio" name="role" value="software/hardware-engineering"/>Software/Hardware engineer</label>
+          <label><input type="radio" name="role" value="other-or-none"/>Other/No programming-related role</label>
+        </fieldset>
+        <hr class="bottom_line"/>
+        <fieldset>
+          <label>What is your favorite programming language(s) to use? (Select all)</label>
+          <label><input type="checkbox" value="python"/>Python</label>
+          <label><input type="checkbox" value="javascript"/>Javascript</label>
+          <label><input type="checkbox" value="html/css"/>HTML/CSS</label>
+          <label><input type="checkbox" value="typescript"/>Typescript</label>
+          <label><input type="checkbox" value="c"/>C</label>
+          <label><input type="checkbox" value="objective-c"/>Objective-C</label>
+          <label><input type="checkbox" value="c++"/>C++</label>
+          <label><input type="checkbox" value="C#"/>C#</label>
+          <label><input type="checkbox" value="swift"/>Swift</label>
+          <label><input type="checkbox" value="java"/>Java</label>
+          <label><input type="checkbox" value="other"/>Other</label>
+        </fieldset>
+        <hr class="bottom_line"/>
+        <fieldset>
+          <label>Please explain your answer for the above question and anything else you may want to add:</label>
+          <textarea rows="8" cols="40" placeholder="I like coding on my private jet because..."></textarea>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit Form" />
+
+      </form>
+    </div>
+  </body>
+</html>
